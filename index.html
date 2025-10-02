@@ -5,10 +5,10 @@
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
+  <title>Arun & Pooja Wedding Invitation</title>
 
-    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
-    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
+  <meta property="og:title" content="Arun & Pooja Wedding - 24 & 26 October 2025">
+  <meta property="og:description" content="You're invited to celebrate the wedding of Arun & Pooja. Ceremony: 24 Oct 2025 at Sri Murugan Temple, Thiruthani. Reception: 26 Oct 2025 at KPA Palace, Vaniyambadi.">
     <meta property="og:locale" content="id_ID" />
     <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
     <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
@@ -39,6 +39,16 @@
 
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+      /* Small page-specific styles moved from inline to here */
+      .hero .btn-cta { margin-top: 1rem; }
+      .rsvp-form-container { max-width: 600px; margin: 0 auto; text-align: left; }
+      #blessings { max-width: 700px; margin: 0 auto; text-align: left; min-height: 80px; border-radius: 6px; padding: 12px; background: rgba(255,255,255,0.04); }
+      .google-map-iframe { border: 0; }
+  .map-actions { text-align:center; margin-top:12px; }
+  .map-actions .button { margin: 0 6px; }
+  .lang-toggle-wrap { margin-top: 8px; }
+    </style>
   </head>
 
   <body>
@@ -68,23 +78,18 @@
             <div class="navbar-end">
               <div class="navbar-item">
                 <a class="navbar-item" href="#Waktu">
-                  Waktu
+                  Event Details
                 </a>
               </div>
               <div class="navbar-item">
                 <a class="navbar-item" href="#lokasi">
-                  Lokasi
+                  Locations
                 </a>
               </div>
               
               <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-pasangan">
-                  Tentang CPW dan CPP
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
+                <a class="navbar-item" href="#connect">
+                  Connect
                 </a>
               </div>
             </div>
@@ -94,47 +99,45 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Nama Wanita & Nama Pria</h2>
+            <h1 class="subtitle">Arun & Pooja</h1>
+            <h2 class="title">Invite You to Celebrate Their Love 💖</h2>
             <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 21 April 2021 
-                </br>
-                [Nama Tempat], [Nama Area]
-                </br>
-                [Nama Kota]
-              
+              “Two hearts, one love, and a lifetime of happiness.”
+              <br />
+              Wedding: 24th October 2025 • Reception: 26th October 2025
             </h4>
+            <div class="btn-cta">
+              <a href="#rsvp" class="button btn-cta">RSVP Now →</a>
+            </div>
+            <div class="lang-toggle-wrap">
+              <button id="lang-toggle" class="button is-small">தமிழ் / English</button>
+            </div>
           </div>
           <!-- Start Countdown -->       
           <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Days</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
             </ul>
             <div class="spasi">
             </div>
             <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+              // Countdown to Reception: 26 Oct 2025 11:30:00 (local time)
+              var receptionDate = '10/26/2025 11:30:00';
 
               $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
+                date: receptionDate, // Date format: MM/DD/YYYY HH:MM:SS
+                offset: +5.5, // India timezone approx IST +5:30; adjust as needed
+                day: 'Day',
+                days: 'Days'
               }, function () {
-                alert('Done!');
+                // Optional callback when countdown completes
+                console.log('Countdown completed');
               });
             </script>  
           </div>
@@ -151,18 +154,15 @@
                     <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="#Waktu">Waktu</a>
+                    <a href="#Waktu">Event Details</a>
                   </li>
                   <li>
-                    <a href="#lokasi">Lokasi</a>
+                    <a href="#lokasi">Locations</a>
                   </li>
                   <li>
-                    <a href="#tentang-pasangan">Tentang CPW & CPP</a>
+                    <a href="#connect">Connect</a>
                   </li>
 
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -184,11 +184,7 @@
         </div>
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
-          <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+          You are warmly invited to celebrate our wedding.
         </p>
 
         <span class="space40px"></span>
@@ -196,11 +192,11 @@
 
         <div data-aos="fade-up" data-aos-easing="linear">
           <div class="nama-lengkap" >
-            Nama Calon Mempelai Wanita
+            V. Arun
           </div>
           <div class="ampersand">&</div>
           <div class="nama-lengkap">
-          Nama Calon Mempelai Pria
+            Dr. Y. Pooja
           </div>
            
         </div>
@@ -218,25 +214,25 @@
         <div class="container">
 
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
+            <h1 class="title has-text-centered section-title">Event Details</h1>
           </div>
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
             <div
               class="column is-4 has-vertically-aligned-content">
             
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">21</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Maret 2020</div>
+                  <div class="waktu tanggal-hari has-text-centered">Friday</div> 
+                  <div class="waktu tanggal-angka has-text-centered">24</div>
+                  <div class="waktu tanggal-bulan has-text-centered">October 2025</div>
               </p>
             
             </div>
             <div class="column is-4 has-vertically-aligned-content">
             
               <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
+                Wedding Ceremony:
                 <br>
-                <strong>17.00 WIB</strong>
+                <strong>6:00 a.m. – 7:30 a.m.</strong>
               </p>
             
             </div>
@@ -244,9 +240,9 @@
             <div class="column is-4 has-vertically-aligned-content">
               
               <h1 class="waktu is-larger has-text-centered">
-                Resepsi:
+                Reception:
                 <br>
-                <strong>19.00  - 21.00 WIB</strong>
+                <strong>26th October 2025 • From 11:30 a.m. onwards</strong>
               </h1>
               
               
@@ -256,7 +252,7 @@
         </div>
         <div class="space40px"></div>
         <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;text=Arun+%26+Pooja+Reception&amp;dates=20251026T063000Z/20251026T090000Z&amp;details=KPA+Palace%2C+Opp.+Municipality%2C+New+Town%2C+Vaniyambadi" target="_blank" rel="noopener" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
             &nbsp;&nbsp;Google Calendar
           </a>
@@ -268,197 +264,77 @@
       <section class="section-darker" id="lokasi" >
         <div class="container">
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <h1 class="title has-text-centered section-title">Locations</h1>
             <p class="tempat is-larger has-text-centered">
-              <strong>RM Pondok Kenanga</strong>
+              <strong>Ceremony — Sri Murugan Temple, Thiruthani</strong>
               <br>
-              Jl. Kenanga Raya No.9, RT.001/RW.006A, Jakasampurna, 
+              Friday, 24th October 2025 • 6:00 a.m. – 7:30 a.m.
               <br>
-              Kec. Bekasi Barat, Kota Bekasi, Jawa Barat
               <br>
+              <strong>Reception — KPA Palace, Opp. Municipality, New Town, Vaniyambadi</strong>
+              <br>
+              Sunday, 26th October 2025 • From 11:30 a.m.
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.google.com/maps?ll=-6.246855,106.971346&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=RM.%20Pondok%20Kenanga%20Jl.%20Kenanga%20Raya%20No.9%20RT.001%2FRW.006A%2C%20Jakasampurna%20Bekasi%20Barat%2C%20Bekasi%20City%2C%20West%20Java%2017145@-6.2468549,106.9713456" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Google Maps
-            </a>
-          </div>
+            <!-- Map: KPA Palace (Reception) as default. Using simple q= query embed to avoid invalid pb parameter. -->
+            <iframe src="https://www.google.com/maps?q=KPA+Palace+Vaniyambadi&z=15&output=embed" width="100%" height="450" frameborder="0" class="google-map-iframe" title="Reception Location - KPA Palace" loading="lazy"></iframe>
+        </div>
+        <div class="space40px"></div>
+        <div class="map-actions">
+          <!-- Smaller map preview (Ceremony) -->
+          <iframe src="https://www.google.com/maps?q=Sri+Murugan+Temple+Thiruthani&z=15&output=embed" width="100%" height="300" frameborder="0" class="google-map-iframe" title="Ceremony Location - Sri Murugan Temple" loading="lazy"></iframe>
+          <!-- Redirection links that open the location in Google Maps (safe, no API key required) -->
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=KPA+Palace,+Vaniyambadi" target="_blank" rel="noopener">Open Reception in Maps</a>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=Sri+Murugan+Temple+Thiruthani" target="_blank" rel="noopener">Open Ceremony in Maps</a>
+        </div>
         </div>
       </section>
       <!-- End Lokasi Content -->
 
-      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
+      <!-- Begin Connect Section (replaces About + RSVP) -->
+      <section class="section-light regular-section" id="connect">
         <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1>
-            
+          <div class="columns is-multiline has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <div class="column is-12">
+              <h1 class="title section-title">Connect with the Couple</h1>
+              <p class="subtitle">For confirmations or further questions, message the bride or groom on WhatsApp.</p>
+            </div>
 
-          
-          <!-- IMAGES -->  
-        <div class=" tile">
-          <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">November 2018</p>
-                <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">
-                  Desember 2018 - Februari 2019
-                </p>
-                <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
-                </p>   
-              </div>            
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">  
-                <p class="title-foto">
-                  Maret 2019
-                </p>
-                <p class="subtitle-foto">
-                  Cerita cinta dimulai
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="space24px"></div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Juni 2019</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+            <div class="column is-6">
+              <p class="title-foto">Arun (Groom)</p>
+              <a class="button is-link is-medium" href="https://wa.me/919629391033?text=Hello%20Arun%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">Message Arun's Family on WhatsApp</a>
             </div>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Desember 2019</p>
-              <p class="subtitle-foto">Lamaran</p>
+
+            <div class="column is-6">
+              <p class="title-foto">Pooja (Bride)</p>
+              <a class="button is-link is-medium" href="https://wa.me/918300858872?text=Hello%20Pooja%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">Message Pooja's Family on WhatsApp</a>
             </div>
-          </article>
-        </div>
-        <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Maret 2020</p>
-              <p class="subtitle-foto">Menikah</p>
-            </div>
-          </article>
-        </div>
-      </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
 
           </div>
         </div>
       </section>
-      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
+      <!-- End Connect Section -->
 
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Merupakan suatu kehormatan dan kebahagiaan bagi kami
-                <br>
-                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
-                memberikan doa restu.
-                <br>
-                <br>
-                Jika bisa hadir kami tunggu konfirmasinya, 
-                <br>
-                Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
-                <br>
-                <br>
-                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
-                <br> 
-                semoga bisa berjumpa di lain kesempatan
-                <br>
-                <br>
-                Stay safe & jaga kesehatan ya :)
-                </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20CPW,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari CPW
-              </a>
-              
-
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari CPP
-              </a >
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram":" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPW">
-                  <i class="fab fa-instagram"></i> @instagramaccount
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPP">
-                  <i class="fab fa-instagram"></i> @instagramaccount
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section>
-      <!-- End RSVP Content -->
     </div>
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
     <div class="footer">
       <div class="container">
-        <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
-          <p class="has-vertically-align">2020 &copy @daengdoang </p>
-        </a>
-        <a href="https://bulma.io" class="has-vertically-align">
-          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
-        </a>
-        <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
-        </a>
+      <div class="columns"></div>
+        <div class="column is-6">
+        <p><strong>Wedding Family Contacts</strong></p>
+        <p>G. Vithyasegar & V. Kanimozhi: 9843210237, 9629391033</p>
+        <p>R. Yoganantham & Y. Sarojini: 9488148889, 8300858872</p>
+        <p>Event Coordinator: V. Saran, MBA</p>
+        <p>Arun (Groom): +91-9629391033</p>
+        <p>Pooja (Bride): +91-8300858872</p>
+        </div>
+        <div class="column is-6 has-text-right">
+        <p>© 2025 Arun & Pooja</p>
+        </div>
+      </div>
       </div>
     </div>
     <!-- End Footer -->
@@ -470,9 +346,43 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        easing: "ease-out",
-        duration: 800,
+      easing: "ease-out",
+      duration: 800,
       });
     </script>
-  </body>
-</html>
+    <script>
+      // RSVP handler removed — connect via WhatsApp buttons instead.
+    </script>
+    <script>
+      // Minimal bilingual toggle (English/Tamil placeholder). Expand translations as needed.
+      (function(){
+      var toggle = document.getElementById('lang-toggle');
+      if (!toggle) return;
+      var en = {
+        heroTitle: 'Invite You to Celebrate Their Love 💖',
+        heroSub: '“Two hearts, one love, and a lifetime of happiness.”',
+        rsvpHeading: 'RSVP',
+      };
+      var ta = {
+        heroTitle: 'அவர்கள் அவர்களின் காதலை கொண்டாட உங்களை அழைக்கிறார்கள் 💖',
+        heroSub: '“இரு இதயங்கள், ஒரு காதல் மற்றும் வாழ்நாளையே சந்தோஷம்.”',
+        rsvpHeading: 'வருகை நிச்சயம்',
+      };
+      var current = 'en';
+      function apply(lang){
+        var data = (lang==='ta')?ta:en;
+        var hero = document.querySelector('.hero .title');
+        var subtitle = document.querySelector('.hero .subtitle.tempatwaktu');
+        var rsvp = document.querySelector('#rsvp .section-title');
+        if (hero) hero.textContent = data.heroTitle;
+        if (subtitle) subtitle.firstChild.nodeValue = data.heroSub + '\n';
+        if (rsvp) rsvp.textContent = data.rsvpHeading;
+      }
+      toggle.addEventListener('click', function(){
+        current = (current==='en')?'ta':'en';
+        apply(current);
+      });
+      })();
+    </script>
+    </body>
+  </html>
