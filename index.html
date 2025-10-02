@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#BC8887" />
+    <meta name="theme-color" content="#BC8887" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+    <meta name="msapplication-TileColor" content="#BC8887">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arun & Pooja Wedding Invitation</title>
 
   <meta property="og:title" content="Arun & Pooja Wedding - 24 & 26 October 2025">
-  <meta property="og:description" content="You're invited to celebrate the wedding of Arun & Pooja. Ceremony: 24 Oct 2025 at Sri Murugan Temple, Thiruthani. Reception: 26 Oct 2025 at KPA Palace, Vaniyambadi.">
-    <meta property="og:locale" content="id_ID" />
+  <meta property="og:description" content="You're invited to celebrate the wedding of Arun & Pooja. Ceremony: 24 Oct 2025 at Sri Murugan Temple, Thiruthani. Reception:
+    <meta property="og:locale" content="en_IN" />
     <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
-    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
+    <meta property="og:url" content="https://poojaandarun.in/">
+    <link rel="canonical" href="https://poojaandarun.in/" />
     <meta name="twitter:card" content="summary_large_image">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
@@ -48,6 +52,34 @@
   .map-actions { text-align:center; margin-top:12px; }
   .map-actions .button { margin: 0 6px; }
   .lang-toggle-wrap { margin-top: 8px; }
+
+  /* Responsive helpers: make maps, images and buttons scale on small screens */
+  .section-map { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+  .section-map iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+  /* Smaller inline map preview in actions (if present) */
+  .map-actions iframe.google-map-iframe { height: 200px; width: 100%; display: block; margin-bottom: 0.75rem; }
+
+  /* Make images and photo tiles fluid */
+  img, .foto-item, .divider, .bismillah { max-width: 100%; height: auto; }
+  .foto-item { background-size: cover; background-position: center; }
+
+  /* Prevent long words breaking layout and let titles wrap */
+  .hero .title, .hero .subtitle, .nama-lengkap, .title-foto { word-wrap: break-word; word-break: break-word; }
+
+  /* Buttons full width on small screens for easier tapping */
+  @media (max-width: 768px) {
+    .btn-cta, .button.btn-cta, .button.is-link.is-medium, .map-actions .button { width: 100%; display: block; margin-bottom: 0.75rem; }
+    .columns .column.is-6 { width: 100%; }
+    .title { font-size: 1.4rem; }
+    .subtitle { font-size: 1rem; }
+    .nama-lengkap { font-size: 1.2rem; }
+    .section-map, .map-actions { padding-left: 0.5rem; padding-right: 0.5rem; }
+  }
+
+  /* Slightly larger touch targets on narrow screens */
+  @media (max-width: 480px) {
+    .button { padding-left: 1rem; padding-right: 1rem; }
+  }
     </style>
   </head>
 
@@ -99,16 +131,18 @@
         <!-- Begin Hero Content-->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="subtitle">Arun & Pooja</h1>
-            <h2 class="title">Invite You to Celebrate Their Love 💖</h2>
+            <h1 class="subtitle">Wedding Invitation</h1>
+            <h1 class="subtitle">Invite You to Celebrate Their Love 💖</h1>
+            <h2 class="title">Arun & Pooja</h2>
             <h4 class="subtitle tempatwaktu">
               “Two hearts, one love, and a lifetime of happiness.”
               <br />
               Wedding: 24th October 2025 • Reception: 26th October 2025
             </h4>
-            <div class="btn-cta">
-              <a href="#rsvp" class="button btn-cta">RSVP Now →</a>
-            </div>
+            <a href="#Waktu" class="button btn-cta is-medium is-primary has-tooltip" data-tooltip="See Event Details" data-aos="zoom-in">
+              <i class="fas fa-heart"></i>
+              &nbsp;&nbsp;View Event Details
+            </a>
             <div class="lang-toggle-wrap">
               <button id="lang-toggle" class="button is-small">தமிழ் / English</button>
             </div>
@@ -180,7 +214,7 @@
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
         
         <!-- <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="In the name of Allah, the Most Gracious, the Most Merciful">
         </div> -->
 
         <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
@@ -221,8 +255,8 @@
               class="column is-4 has-vertically-aligned-content">
             
               <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Friday</div> 
-                  <div class="waktu tanggal-angka has-text-centered">24</div>
+                  <div class="waktu tanggal-hari has-text-centered">Sunday</div> 
+                  <div class="waktu tanggal-angka has-text-centered">26</div>
                   <div class="waktu tanggal-bulan has-text-centered">October 2025</div>
               </p>
             
