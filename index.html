@@ -1,420 +1,1237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#BC8887" />
-    <meta name="theme-color" content="#BC8887" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
-    <meta name="msapplication-TileColor" content="#BC8887">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#BC8887" />
+  <meta name="theme-color" content="#BC8887" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+  <meta name="msapplication-TileColor" content="#BC8887">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arun & Pooja Wedding Invitation</title>
-
+  <meta name="description" content="Join Arun & Pooja on 24 & 26 October 2025 to celebrate their wedding at Thiruthani and Vaniyambadi.">
+  <meta name="author" content="Arun & Pooja">
   <meta property="og:title" content="Arun & Pooja Wedding - 24 & 26 October 2025">
-  <meta property="og:description" content="You're invited to celebrate the wedding of Arun & Pooja. Ceremony: 24 Oct 2025 at Sri Murugan Temple, Thiruthani. Reception:
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
-    <meta property="og:url" content="https://poojaandarun.in/">
-    <link rel="canonical" href="https://poojaandarun.in/" />
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-    <link rel="icon" type="image/png" href="image/favicon.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
-    <!-- Begin Script for Countdown -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <meta property="og:description" content="You're invited to celebrate the wedding of Arun & Pooja. Ceremony: 24 Oct 2025 at Sri Murugan Temple, Thiruthani. Reception: 26 Oct 2025 at KPA Palace, Vaniyambadi">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="/static/wedding-og-image.jpg">
+<meta property="og:url" content="https://poojaandarun.in/">
+  <link rel="canonical" href="https://poojaandarun.in/" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+  
+  <!-- Performance: preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-      gtag('config', 'UA-23064379-20');
-    </script>
-    <!-- Begin Script for Countdown -->
+  <!-- Load AOS and FontAwesome with defer where safe -->
+  <script defer src="https://kit.fontawesome.com/2828f7885a.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-    <!-- Github Button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <style>
-      /* Small page-specific styles moved from inline to here */
-      .hero .btn-cta { margin-top: 1rem; }
-      .rsvp-form-container { max-width: 600px; margin: 0 auto; text-align: left; }
-      #blessings { max-width: 700px; margin: 0 auto; text-align: left; min-height: 80px; border-radius: 6px; padding: 12px; background: rgba(255,255,255,0.04); }
-      .google-map-iframe { border: 0; }
-  .map-actions { text-align:center; margin-top:12px; }
-  .map-actions .button { margin: 0 6px; }
-  .lang-toggle-wrap { margin-top: 8px; }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
-  /* Responsive helpers: make maps, images and buttons scale on small screens */
-  .section-map { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
-  .section-map iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-  /* Smaller inline map preview in actions (if present) */
-  .map-actions iframe.google-map-iframe { height: 200px; width: 100%; display: block; margin-bottom: 0.75rem; }
+    :root {
+      --primary-color: #2568EF;
+      --secondary-color: #1A4DB3;
+      --accent-color: #3A7DFF;
+      --dark-bg: #0F172A;
+      --light-bg: #F8FAFC;
+      --text-dark: #1E293B;
+      --text-light: #FFFFFF;
+      --gradient-start: #2568EF;
+      --gradient-end: #3A7DFF;
+      /* main header photo — warm floral / ceremony vibe (replace if you prefer another) */
+      --hero-image-url: url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80');
+      --hero-decor-url: url('https://images.unsplash.com/photo-1505575967450-36a1b2f7cb4f?auto=format&fit=crop&w=1600&q=80');
+}
 
-  /* Make images and photo tiles fluid */
-  img, .foto-item, .divider, .bismillah { max-width: 100%; height: auto; }
-  .foto-item { background-size: cover; background-position: center; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  /* Prevent long words breaking layout and let titles wrap */
-  .hero .title, .hero .subtitle, .nama-lengkap, .title-foto { word-wrap: break-word; word-break: break-word; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      overflow-x: hidden;
+      background: var(--light-bg);
+    }
 
-  /* Buttons full width on small screens for easier tapping */
-  @media (max-width: 768px) {
-    .btn-cta, .button.btn-cta, .button.is-link.is-medium, .map-actions .button { width: 100%; display: block; margin-bottom: 0.75rem; }
-    .columns .column.is-6 { width: 100%; }
-    .title { font-size: 1.4rem; }
-    .subtitle { font-size: 1rem; }
-    .nama-lengkap { font-size: 1.2rem; }
-    .section-map, .map-actions { padding-left: 0.5rem; padding-right: 0.5rem; }
-  }
+    /* Preloader */
+    .preloader-wrapper {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .preloader-wrapper.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
 
-  /* Slightly larger touch targets on narrow screens */
-  @media (max-width: 480px) {
-    .button { padding-left: 1rem; padding-right: 1rem; }
-  }
-    </style>
-  </head>
+    .preloader {
+      animation: pulse 1.5s ease-in-out infinite;
+    }
 
-  <body>
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
+    .preloader img {
+      width: 80px;
+      height: 80px;
+      filter: brightness(0) invert(1);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+
+    /* Hero Section */
+    .hero {
+      /* gradient overlay plus photographic header image */
+      background:
+        linear-gradient(135deg, rgba(37,104,239,0.85), rgba(58,125,255,0.85)),
+        var(--hero-image-url);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      position: relative;
+      color: var(--text-light);
+    }
+
+    /* subtle texture overlay to give depth without overpowering the photo */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: var(--hero-decor-url);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: 1;
+      transform: scale(1.01);
+    }
+
+    .hero-body {
+      padding: 3rem 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--text-light);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin: 1rem 0;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero .subtitle {
+      font-size: 1.3rem;
+      color: var(--text-light);
+      font-weight: 300;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .tempatwaktu {
+      font-size: 1.1rem !important;
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Countdown */
+    #hitungmundur {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      max-width: 600px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    #hitungmundur li {
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    #hitungmundur .separator {
+      color: var(--text-light);
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    #hitungmundur span {
+      display: block;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-light);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    #hitungmundur p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Buttons */
+    .btn-cta {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: white !important;
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-transform: none;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    }
+
+    .lang-toggle-wrap {
+      margin-top: 1.5rem;
+    }
+
+    #lang-toggle {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    #lang-toggle:hover {
+      background: rgba(255,255,255,0.3);
+      transform: scale(1.05);
+    }
+
+    /* Navigation */
+    .navbar {
+      background: rgba(255,255,255,0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero-menu-desktop ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1.5rem 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-menu-desktop li {
+      margin: 0 2rem;
+    }
+
+    .hero-menu-desktop a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    .hero-menu-desktop a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .hero-menu-desktop a:hover::after,
+    .hero-menu-desktop li.is-active a::after {
+      width: 100%;
+    }
+
+    /* Content Sections */
+    .section-light {
+      background: var(--light-bg);
+      padding: 5rem 2rem;
+    }
+
+    .section-dark {
+      background: linear-gradient(135deg, var(--dark-bg), #2a2a2a);
+      color: var(--text-light);
+      padding: 5rem 2rem;
+    }
+
+    .section-darker {
+      background: #0f0f0f;
+      color: var(--text-light);
+      padding: 5rem 2rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    }
+
+    /* Names Section */
+    .nama-lengkap {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin: 1rem 0;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .ampersand {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: var(--primary-color);
+      margin: 1.5rem 0;
+    }
+
+    .bodytext {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      max-width: 200px;
+      opacity: 0.6;
+      margin: 2rem auto;
+    }
+
+    /* Event Cards */
+    .waktu {
+      background: rgba(255,255,255,0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .waktu:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .tanggal-hari {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .tanggal-angka {
+      font-size: 5rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+      margin: 1rem 0;
+    }
+
+    .tanggal-bulan {
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    /* Location Section */
+    .tempat {
+      line-height: 2;
+      font-size: 1.1rem;
+    }
+
+    .section-map {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      margin: 2rem 0;
+    }
+
+    .section-map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .map-actions {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .map-actions .button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+    }
+
+    .map-actions .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      background: var(--secondary-color);
+    }
+
+    /* Connect Section */
+    .title-foto {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .is-link {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .is-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      background: linear-gradient(135deg, #128C7E, #075E54);
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, var(--dark-bg), #2a2a2a);
+      color: var(--text-light);
+      padding: 3rem 2rem;
+    }
+
+    .footer strong {
+      color: var(--accent-color);
+    }
+
+    .footer p {
+      margin: 0.5rem 0;
+      line-height: 1.8;
+    }
+
+    /* Utility Classes */
+    .space40px {
+      height: 40px;
+      display: block;
+    }
+
+    .no-padding-top {
+      padding-top: 0 !important;
+    }
+
+    /* Reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+      .preloader {
+        animation: none;
+      }
+    }
+
+    /* Make background-attachment behave on mobile */
+    @media (max-width: 1024px) {
+      .hero {
+        background-attachment: scroll;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero .title {
+        font-size: 2.5rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .nama-lengkap {
+        font-size: 2rem;
+      }
+
+      .ampersand {
+        font-size: 2.5rem;
+      }
+
+      #hitungmundur {
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
+
+      #hitungmundur li {
+        padding: 0.5rem;
+      }
+
+      #hitungmundur span {
+        font-size: 2rem;
+      }
+
+      .tanggal-angka {
+        font-size: 3.5rem;
+      }
+
+      .btn-cta, .button {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+
+      .hero-menu-desktop {
+        display: none;
+      }
+
+      .section-light, .section-dark, .section-darker {
+        padding: 3rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero .title {
+        font-size: 2rem;
+      }
+
+      .waktu {
+        padding: 1rem;
+      }
+
+      .tanggal-angka {
+        font-size: 3rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Music control button */
+    .music-control {
+      position: fixed;
+      right: 1rem;
+      bottom: 1.2rem;
+      z-index: 99999;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(37,104,239,0.95), rgba(58,125,255,0.95));
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(18, 52, 102, 0.25);
+      border: none;
+      cursor: pointer;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+    .music-control:active { transform: scale(0.98); }
+    .music-control:focus { outline: 3px solid rgba(255,255,255,0.18); outline-offset: 3px; }
+
+    .music-control .fa {
+      font-size: 1.1rem;
+      pointer-events: none;
+    }
+
+    .music-control[aria-pressed="true"] {
+      background: linear-gradient(135deg, rgba(58,125,255,1), rgba(37,104,239,1));
+    }
+
+    @media (max-width: 768px) {
+      .music-control { right: 0.8rem; bottom: 0.9rem; width: 48px; height: 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#regular-section" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;"
+     onfocus="this.style.left='10px';this.style.top='10px';this.style.width='auto';this.style.height='auto';" onblur="this.style.left='-999px';this.style.top='auto';">
+    Skip to content
+  </a>
+
+  <!-- Preloader (now accessible and class-driven) -->
+  <div class="preloader-wrapper" role="status" aria-live="polite" aria-label="Loading invitation">
+    <div class="preloader" aria-hidden="true">
+      <i class="fas fa-heart" style="font-size: 4rem; color: white;" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <!-- music control button inserted near top-level so it is always available -->
+  <button id="music-control" class="music-control" aria-pressed="false" aria-label="Play invitation music" title="Play music (toggle)">
+    <i id="music-icon" class="fas fa-music" aria-hidden="true"></i>
+  </button>
+
+  <!-- Header -->
+  <div class="header-wrapper" id="home">
+    <section class="hero is-large">
+      <!-- Mobile Nav -->
+      <nav class="navbar is-transparent is-hidden-desktop" role="navigation" aria-label="mobile navigation">
+        <div class="navbar-brand is-fixed-top">
+          <button class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mobile-nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div id="mobile-nav" class="navbar-menu" aria-hidden="true">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#home">Home</a>
+            <a class="navbar-item" href="#Waktu">Event Details</a>
+            <a class="navbar-item" href="#lokasi">Locations</a>
+            <a class="navbar-item" href="#connect">Connect</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="subtitle">Wedding Invitation</h1>
+          <h1 class="subtitle">Invite You to Celebrate Their Love 💖</h1>
+          <h2 class="title">Arun & Pooja</h2>
+          <h4 class="subtitle tempatwaktu">
+            <br />
+            Wedding: 24th October 2025 • Reception: 26th October 2025
+          </h4>
+          <a href="#Waktu" class="button btn-cta is-medium">
+            <i class="fas fa-heart"></i>
+            &nbsp;&nbsp;View Event Details
+          </a>
+          <div class="lang-toggle-wrap">
+            <button id="lang-toggle" class="button is-small">தமிழ் / English</button>
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div>
+          <ul id="hitungmundur">
+            <li><span class="days">00</span><p class="days_text">Days</p></li>
+            <li class="separator">:</li>
+            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+            <li class="separator">:</li>
+            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+            <li class="separator">:</li>
+            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- End Preloader-->
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Event Details
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Locations
-                </a>
-              </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#connect">
-                  Connect
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Wedding Invitation</h1>
-            <h1 class="subtitle">Invite You to Celebrate Their Love 💖</h1>
-            <h2 class="title">Arun & Pooja</h2>
-            <h4 class="subtitle tempatwaktu">
-              “Two hearts, one love, and a lifetime of happiness.”
-              <br />
-              Wedding: 24th October 2025 • Reception: 26th October 2025
-            </h4>
-            <a href="#Waktu" class="button btn-cta is-medium is-primary has-tooltip" data-tooltip="See Event Details" data-aos="zoom-in">
-              <i class="fas fa-heart"></i>
-              &nbsp;&nbsp;View Event Details
-            </a>
-            <div class="lang-toggle-wrap">
-              <button id="lang-toggle" class="button is-small">தமிழ் / English</button>
-            </div>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-              <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Days</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              // Countdown to Reception: 26 Oct 2025 11:30:00 (local time)
-              var receptionDate = '10/26/2025 11:30:00';
 
-              $('#hitungmundur').countdown({
-                date: receptionDate, // Date format: MM/DD/YYYY HH:MM:SS
-                offset: +5.5, // India timezone approx IST +5:30; adjust as needed
-                day: 'Day',
-                days: 'Days'
-              }, function () {
-                // Optional callback when countdown completes
-                console.log('Countdown completed');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">Event Details</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Locations</a>
-                  </li>
-                  <li>
-                    <a href="#connect">Connect</a>
-                  </li>
-
-                </ul>
-              </div>
+      <!-- Hero Menu -->
+      <div class="hero-foot">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active"><a href="#home">Home</a></li>
+                <li><a href="#Waktu">Event Details</a></li>
+                <li><a href="#lokasi">Locations</a></li>
+                <li><a href="#connect">Connect</a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
+      </div>
+    </section>
+  </div>
 
-    <!-- Begin Main Content -->
-    <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <!-- <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="In the name of Allah, the Most Gracious, the Most Merciful">
-        </div> -->
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Names Section -->
+    <section class="section-light no-padding-top has-text-centered" id="regular-section">
+      <p class="bodytext" data-aos="fade-up">
+        You are warmly invited to celebrate our wedding.
+      </p>
 
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          You are warmly invited to celebrate our wedding.
-        </p>
+      <span class="space40px"></span>
+      <span class="space40px"></span>
 
-        <span class="space40px"></span>
-        <span class="space40px"></span>
+      <div data-aos="fade-up">
+        <div class="nama-lengkap">V. Arun</div>
+        <div class="ampersand">&</div>
+        <div class="nama-lengkap">Dr. Y. Pooja</div>
+      </div>
 
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            V. Arun
-          </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-            Dr. Y. Pooja
-          </div>
-           
+      <span class="space40px"></span>
+      <div data-aos="fade-up">
+        <i class="fas fa-heart" style="font-size: 3rem; color: var(--primary-color); opacity: 0.6;"></i>
+      </div>
+      <span class="space40px"></span>
+    </section>
+
+    <!-- Event Details -->
+    <section class="section-dark" id="Waktu">
+      <div class="container">
+        <div class="column is-12" data-aos="fade-up">
+          <h1 class="title has-text-centered section-title">Event Details</h1>
         </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
-
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Event Details</h1>
+        <div class="columns is-multiline" data-aos="fade-up">
+          <div class="column is-4 has-vertically-aligned-content">
+            <div class="waktu">
+              <div class="tanggal-hari">Sunday</div>
+              <div class="tanggal-angka">26</div>
+              <div class="tanggal-bulan">October 2025</div>
+            </div>
           </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sunday</div> 
-                  <div class="waktu tanggal-angka has-text-centered">26</div>
-                  <div class="waktu tanggal-bulan has-text-centered">October 2025</div>
-              </p>
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                Wedding Ceremony:
-                <br>
-                <strong>6:00 a.m. – 7:30 a.m.</strong>
-              </p>
-            
-            </div>
-
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
+          <div class="column is-4 has-vertically-aligned-content">
+            <div class="waktu is-larger has-text-centered">
+              Wedding Ceremony:
+              <br><br>
+                <strong style="color: white;">6:00 a.m. – 7:30 a.m.</strong>
+              </div>
+              </div>
+              <div class="column is-4 has-vertically-aligned-content">
+              <div class="waktu is-larger has-text-centered">
                 Reception:
-                <br>
-                <strong>26th October 2025 • From 11:30 a.m. onwards</strong>
-              </h1>
-              
-              
+                <br><br>
+                <strong style="color: white;">From 11:30 a.m. onwards</strong>
             </div>
-
           </div>
         </div>
         <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;text=Arun+%26+Pooja+Reception&amp;dates=20251026T063000Z/20251026T090000Z&amp;details=KPA+Palace%2C+Opp.+Municipality%2C+New+Town%2C+Vaniyambadi" target="_blank" rel="noopener" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" data-aos="zoom-in">
+        <div class="has-text-centered" data-aos="fade-up">
+          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;text=Arun+%26+Pooja+Reception&amp;dates=20251026T063000Z/20251026T090000Z&amp;details=KPA+Palace%2C+Opp.+Municipality%2C+New+Town%2C+Vaniyambadi" target="_blank" rel="noopener" class="button btn-cta">
             <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
+            &nbsp;&nbsp;Add to Google Calendar
           </a>
         </div>
-      </section>
-      <!-- End Waktu Content -->
+      </div>
+    </section>
 
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Locations</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Ceremony — Sri Murugan Temple, Thiruthani</strong>
-              <br>
-              Friday, 24th October 2025 • 6:00 a.m. – 7:30 a.m.
-              <br>
-              <br>
-              <strong>Reception — KPA Palace, Opp. Municipality, New Town, Vaniyambadi</strong>
-              <br>
-              Sunday, 26th October 2025 • From 11:30 a.m.
-            </p>
-          </div>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <!-- Map: KPA Palace (Reception) as default. Using simple q= query embed to avoid invalid pb parameter. -->
-            <iframe src="https://www.google.com/maps?q=KPA+Palace+Vaniyambadi&z=15&output=embed" width="100%" height="450" frameborder="0" class="google-map-iframe" title="Reception Location - KPA Palace"></iframe>
-        </div>
-        <div class="space40px"></div>
-        <div class="map-actions">
-          <!-- Smaller map preview (Ceremony) -->
-          <!-- Redirection links that open the location in Google Maps (safe, no API key required) -->
-          <a class="button" href="https://www.google.com/maps/search/?api=1&query=KPA+Palace,+Vaniyambadi" target="_blank" rel="noopener">Open Reception in Maps</a>
-        </div>
-        </div>
-      </section>
-      <!-- End Lokasi Content -->
-
-      <!-- Begin Connect Section (replaces About + RSVP) -->
-      <section class="section-light regular-section" id="connect">
-        <div class="container">
-          <div class="columns is-multiline has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <div class="column is-12">
-              <h1 class="title section-title">Connect with the Couple</h1>
-              <p class="subtitle">For confirmations or further questions, message the bride or groom on WhatsApp.</p>
-            </div>
-
-            <div class="column is-6">
-              <p class="title-foto">Arun (Groom)</p>
-              <a class="button is-link is-medium" href="https://wa.me/919629391033?text=Hello%20Arun%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">Message Arun's Family on WhatsApp</a>
-            </div>
-
-            <div class="column is-6">
-              <p class="title-foto">Pooja (Bride)</p>
-              <a class="button is-link is-medium" href="https://wa.me/918300858872?text=Hello%20Pooja%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">Message Pooja's Family on WhatsApp</a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- End Connect Section -->
-
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
+    <!-- Locations -->
+    <section class="section-darker" id="lokasi">
       <div class="container">
-      <div class="columns"></div>
-        <div class="column is-6">
-        <p><strong>Wedding Family Contacts</strong></p>
-        <p>G. Vithyasegar & V. Kanimozhi: 9843210237, 9629391033</p>
-        <p>R. Yoganantham & Y. Sarojini: 9488148889, 8300858872</p>
-        <p>Event Coordinator: V. Saran & Kishore.Y</p>
-        <p>Arun (Groom): +91-9629391033</p>
-        <p>Pooja (Bride): +91-8300858872</p>
+        <div class="column is-12" data-aos="fade-up">
+          <h1 class="title has-text-centered section-title">Locations</h1>
+          <p class="tempat is-larger has-text-centered">
+            <strong>Ceremony — Sri Murugan Temple, Thiruthani</strong>
+            <br>
+            Friday, 24th October 2025 • 6:00 a.m. – 7:30 a.m.
+            <br><br>
+            <strong>Reception — KPA Palace, Opp. Municipality, New Town, Vaniyambadi</strong>
+            <br>
+            Sunday, 26th October 2025 • From 11:30 a.m.
+          </p>
         </div>
-        <div class="column is-6 has-text-right">
-        <p>© 2025 Arun & Pooja</p>
+        <div class="section-map" data-aos="fade-up">
+          <iframe src="https://maps.google.com/maps?q=KPA+Palace+Vaniyambadi&z=15&output=embed" title="Reception Location - KPA Palace"></iframe>
+</div>
+        <div class="map-actions">
+          <a class="button" href="https://www.google.com/maps/search/?api=1&query=KPA+Palace,+Vaniyambadi" target="_blank" rel="noopener">
+            <i class="fas fa-map-marker-alt"></i>&nbsp; Open Reception in Maps
+          </a>
         </div>
       </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="section-light" id="connect">
+      <div class="container">
+        <div class="columns is-multiline has-text-centered" data-aos="fade-up">
+          <div class="column is-12">
+            <h1 class="title section-title">Connect with the Couple</h1>
+            <p class="subtitle">For confirmations or further questions, message the bride or groom on WhatsApp.</p>
+          </div>
+
+          <div class="column is-6">
+            <p class="title-foto">Arun (Groom)</p>
+            <a class="button is-link is-medium" href="https://wa.me/919629391033?text=Hello%20Arun%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>&nbsp; Message Arun's Family
+            </a>
+          </div>
+
+          <div class="column is-6">
+            <p class="title-foto">Pooja (Bride)</p>
+            <a class="button is-link is-medium" href="https://wa.me/918300858872?text=Hello%20Pooja%2C%20I%20would%20like%20to%20confirm%20my%20attendance." target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>&nbsp; Message Pooja's Family
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <p><strong>Wedding Family Contacts</strong></p>
+          <p>G. Vithyasegar & V. Kanimozhi: 9843210237, 9629391033</p>
+          <p>R. Yoganantham & Y. Sarojini: 9488148889, 8300858872</p>
+          <p>Event Coordinator: V. Saran & Kishore.Y</p>
+          <p>Arun (Groom): +91-9629391033</p>
+          <p>Pooja (Bride): +91-8300858872</p>
+        </div>
+        <div class="column is-6 has-text-right-tablet">
+          <p>© 2025 Arun & Pooja</p>
+          <p>Made with <i class="fas fa-heart" style="color: var(--accent-color);"></i> for a lifetime of love</p>
+        </div>
       </div>
     </div>
-    <!-- End Footer -->
+  </div>
+  <!-- Scripts -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+<script>
+    // Graceful JS: only run when DOM available
+    (function() {
+      // Helper: safe query
+      const $ = sel => document.querySelector(sel);
+      const $$ = sel => Array.from(document.querySelectorAll(sel));
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-      easing: "ease-out",
-      duration: 800,
+      // Preloader: hide via class for smooth CSS transition and accessibility
+      window.addEventListener('load', () => {
+        const preloader = document.querySelector('.preloader-wrapper');
+        if (preloader) {
+          preloader.classList.add('hidden');
+          // remove after transition to avoid blocking interactions
+          setTimeout(() => {
+            try { preloader.remove(); } catch (e) {}
+          }, 800);
+        }
       });
-    </script>
-    <script>
-      // RSVP handler removed — connect via WhatsApp buttons instead.
-    </script>
-    <script>
-      // Minimal bilingual toggle (English/Tamil placeholder). Expand translations as needed.
-      (function(){
-      var toggle = document.getElementById('lang-toggle');
-      if (!toggle) return;
-      var en = {
-        heroTitle: 'Invite You to Celebrate Their Love 💖',
-        heroSub: '“Two hearts, one love, and a lifetime of happiness.”',
-        rsvpHeading: 'RSVP',
-      };
-      var ta = {
-        heroTitle: 'அவர்கள் அவர்களின் காதலை கொண்டாட உங்களை அழைக்கிறார்கள் 💖',
-        heroSub: '“இரு இதயங்கள், ஒரு காதல் மற்றும் வாழ்நாளையே சந்தோஷம்.”',
-        rsvpHeading: 'வருகை நிச்சயம்',
-      };
-      var current = 'en';
-      function apply(lang){
-        var data = (lang==='ta')?ta:en;
-        var hero = document.querySelector('.hero .title');
-        var subtitle = document.querySelector('.hero .subtitle.tempatwaktu');
-        var rsvp = document.querySelector('#rsvp .section-title');
-        if (hero) hero.textContent = data.heroTitle;
-        if (subtitle) subtitle.firstChild.nodeValue = data.heroSub + '\n';
-        if (rsvp) rsvp.textContent = data.rsvpHeading;
+
+      // AOS init (defer script loaded it) — guard if available
+      if (window.AOS && typeof AOS.init === 'function') {
+        AOS.init({
+          easing: "ease-out",
+          duration: 800,
+          once: true
+        });
       }
-      toggle.addEventListener('click', function(){
-        current = (current==='en')?'ta':'en';
-        apply(current);
+
+      // Mobile Menu Toggle: accessibility-friendly
+      document.addEventListener('DOMContentLoaded', () => {
+        const burger = $('.navbar-burger');
+        if (burger) {
+          const menu = document.getElementById(burger.dataset.target);
+          burger.addEventListener('click', () => {
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', String(!expanded));
+            burger.classList.toggle('is-active');
+            if (menu) {
+              menu.classList.toggle('is-active');
+              menu.setAttribute('aria-hidden', String(!menu.classList.contains('is-active')));
+            }
+          });
+
+          // Close menu when clicking a link
+          $$('.navbar-item').forEach(link => {
+            link.addEventListener('click', () => {
+              burger.classList.remove('is-active');
+              burger.setAttribute('aria-expanded', 'false');
+              if (menu) {
+                menu.classList.remove('is-active');
+                menu.setAttribute('aria-hidden', 'true');
+              }
+            });
+          });
+        }
       });
+
+      // Smooth Scrolling with reduced-motion respect
+      $$('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (!href || href === '#') return;
+          const target = document.querySelector(href);
+          if (!target) return;
+          e.preventDefault();
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (prefersReduced) {
+            target.scrollIntoView();
+          } else {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // Countdown to Wedding Ceremony (padded, cleans up, safe selectors)
+      // Countdown target: Reception (26 Oct 2025 11:30)
+      const countDownDate = new Date("Oct 26, 2025 11:30:00").getTime();
+      let countdown = null;
+      function pad(n){ return String(n).padStart(2,'0'); }
+
+      function updateCountdown() {
+        try {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+          if (distance <= 0) {
+            if (countdown) clearInterval(countdown);
+            const hm = $('#hitungmundur');
+            if (hm) { hm.innerHTML = '<li><span>00</span><p>Reception Started!</p></li>'; }
+            return;
+          }
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((distance / (1000 * 60)) % 60);
+          const seconds = Math.floor((distance / 1000) % 60);
+
+          const elDays = $('.days');
+          const elHours = $('.hours');
+          const elMinutes = $('.minutes');
+          const elSeconds = $('.seconds');
+
+          if (elDays) elDays.innerText = pad(days);
+          if (elHours) elHours.innerText = pad(hours);
+          if (elMinutes) elMinutes.innerText = pad(minutes);
+          if (elSeconds) elSeconds.innerText = pad(seconds);
+        } catch (e) { console.error(e); }
+      }
+      updateCountdown();
+      countdown = setInterval(updateCountdown, 1000);
+
+      // Clean up on unload
+      window.addEventListener('beforeunload', () => {
+        if (countdown) clearInterval(countdown);
+      });
+
+      // Language Toggle (English/Tamil) with persistence
+      const langToggle = $('#lang-toggle');
+      let currentLang = localStorage.getItem('lang') || 'en';
+
+      const translations = {
+      en: {
+        heroSubtitle1: 'Wedding Invitation',
+        heroSubtitle2: 'Invite You to Celebrate Their Love 💖',
+        heroQuote: '"Two hearts, one love, and a lifetime of happiness."',
+        heroDate: 'Wedding: 24th October 2025 • Reception: 26th October 2025',
+        viewDetails: 'View Event Details',
+        welcomeText: 'You are warmly invited to celebrate our wedding.',
+        eventDetailsTitle: 'Event Details',
+        sunday: 'Sunday',
+        october: 'October 2025',
+        ceremony: 'Wedding Ceremony:',
+        ceremonyTime: '6:00 a.m. – 7:30 a.m.',
+        reception: 'Reception:',
+        receptionTime: 'From 11:30 a.m. onwards',
+        addCalendar: 'Add to Google Calendar',
+        locationsTitle: 'Locations',
+        ceremonyLocation: 'Ceremony — Sri Murugan Temple, Thiruthani',
+        ceremonyDateTime: 'Friday, 24th October 2025 • 6:00 a.m. – 7:30 a.m.',
+        receptionLocation: 'Reception — KPA Palace, Opp. Municipality, New Town, Vaniyambadi',
+        receptionDateTime: 'Sunday, 26th October 2025 • From 11:30 a.m.',
+        openMaps: 'Open Reception in Maps',
+        connectTitle: 'Connect with the Couple',
+        connectSubtitle: 'For confirmations or further questions, message the bride or groom on WhatsApp.',
+        groom: 'Arun (Groom)',
+        bride: 'Pooja (Bride)',
+        messageGroom: 'Message Arun\'s Family',
+        messageBride: 'Message Pooja\'s Family',
+        footerContacts: 'Wedding Family Contacts',
+        footerLove: 'Made with',
+        footerText: 'for a lifetime of love',
+        days: 'Days',
+        hours: 'Hours',
+        minutes: 'Minutes',
+        seconds: 'Seconds'
+      },
+      ta: {
+        heroSubtitle1: 'திருமண அழைப்பிதழ்',
+        heroSubtitle2: 'அவர்களின் அன்பைக் கொண்டாட உங்களை அழைக்கிறோம் 💖',
+        heroQuote: '"இரண்டு இதயங்கள், ஒரு காதல், வாழ்நாள் முழுவதும் மகிழ்ச்சி."',
+        heroDate: 'திருமணம்: 24 அக்டோபர் 2025 • வரவேற்பு: 26 அக்டோபர் 2025',
+        viewDetails: 'நிகழ்வு விவரங்களைப் பார்க்க',
+        welcomeText: 'எங்கள் திருமணத்தைக் கொண்டாட உங்களை அன்புடன் அழைக்கிறோம்.',
+        eventDetailsTitle: 'நிகழ்வு விவரங்கள்',
+        sunday: 'ஞாயிறு',
+        october: 'அக்டோபர் 2025',
+        ceremony: 'திருமண விழா:',
+        ceremonyTime: 'காலை 6:00 - காலை 7:30',
+        reception: 'வரவேற்பு விழா:',
+        receptionTime: 'காலை 11:30 முதல்',
+        addCalendar: 'கூகுள் காலெண்டரில் சேர்க்க',
+        locationsTitle: 'இடங்கள்',
+        ceremonyLocation: 'திருமணம் — ஸ்ரீ முருகன் கோவில், திருத்தணி',
+        ceremonyDateTime: 'வெள்ளி, 24 அக்டோபர் 2025 • காலை 6:00 - 7:30',
+        receptionLocation: 'வரவேற்பு — KPA பேலஸ், நகராட்சி எதிரில், நியூ டவுன், வாணியம்பாடி',
+        receptionDateTime: 'ஞாயிறு, 26 அக்டோபர் 2025 • காலை 11:30 முதல்',
+        openMaps: 'வரைபடத்தில் திறக்க',
+        connectTitle: 'தம்பதிகளுடன் தொடர்பு கொள்ளுங்கள்',
+        connectSubtitle: 'உறுதிப்படுத்தல் அல்லது மேலும் கேள்விகளுக்கு, மணமகன் அல்லது மணமகளுக்கு WhatsApp மூலம் செய்தி அனுப்பவும்.',
+        groom: 'அருண் (மணமகன்)',
+        bride: 'பூஜா (மணமகள்)',
+        messageGroom: 'அருண் குடும்பத்திற்கு செய்தி',
+        messageBride: 'பூஜா குடும்பத்திற்கு செய்தி',
+        footerContacts: 'திருமண குடும்ப தொடர்புகள்',
+        footerLove: 'அன்புடன் உருவாக்கப்பட்டது',
+        footerText: 'வாழ்நாள் முழுவதும் அன்புக்காக',
+        days: 'நாட்கள்',
+        hours: 'மணி',
+        minutes: 'நிமிடங்கள்',
+        seconds: 'விநாடிகள்'
+      }
+    };
+
+      // UpdateContent function remains — ensure it's available:
+      // (we re-use the page's updateContent function but add persistence)
+      // For safety, we declare a tiny wrapper that tries to call the existing function.
+      function applyLang(lang) {
+        localStorage.setItem('lang', lang);
+        // call updateContent if it exists
+        if (typeof updateContent === 'function') {
+          updateContent(lang);
+        } else {
+          // minimal fallback: toggle some visible pieces
+          console.warn('updateContent not yet available');
+        }
+      }
+
+      // Initialize language on load
+      applyLang(currentLang);
+
+      if (langToggle) {
+        langToggle.setAttribute('aria-pressed', String(currentLang === 'ta'));
+        langToggle.addEventListener('click', function() {
+          currentLang = currentLang === 'en' ? 'ta' : 'en';
+          applyLang(currentLang);
+          langToggle.setAttribute('aria-pressed', String(currentLang === 'ta'));
+
+          // provide subtle transition unless reduced-motion is enabled
+          if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.body.style.transition = 'opacity 200ms ease';
+            document.body.style.opacity = '0.85';
+            setTimeout(() => { document.body.style.opacity = '1'; }, 200);
+          }
+        });
+      }
+
+      // Countdown to Wedding Ceremony (padded, cleans up, safe selectors)
+      // Countdown target: Reception (26 Oct 2025 11:30)
+      const countDownDate = new Date("Oct 26, 2025 11:30:00").getTime();
+      let countdown = null;
+      function pad(n){ return String(n).padStart(2,'0'); }
+
+      function updateCountdown() {
+        try {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+          if (distance <= 0) {
+            if (countdown) clearInterval(countdown);
+            const hm = $('#hitungmundur');
+            if (hm) { hm.innerHTML = '<li><span>00</span><p>Reception Started!</p></li>'; }
+            return;
+          }
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((distance / (1000 * 60)) % 60);
+          const seconds = Math.floor((distance / 1000) % 60);
+
+          const elDays = $('.days');
+          const elHours = $('.hours');
+          const elMinutes = $('.minutes');
+          const elSeconds = $('.seconds');
+
+          if (elDays) elDays.innerText = pad(days);
+          if (elHours) elHours.innerText = pad(hours);
+          if (elMinutes) elMinutes.innerText = pad(minutes);
+          if (elSeconds) elSeconds.innerText = pad(seconds);
+        } catch (e) { console.error(e); }
+      }
+      updateCountdown();
+      countdown = setInterval(updateCountdown, 1000);
+
+      // Clean up on unload
+      window.addEventListener('beforeunload', () => {
+        if (countdown) clearInterval(countdown);
+      });
+
+      // --- Add background music behavior ---
+      (function setupMusic() {
+        // Create audio element (looping instrumental). Replace src with your preferred audio file if desired.
+        // Note: modern browsers block autoplay with sound; user gesture is required to start playback.
+        const AUDIO_SRC = 'https://cdn.pixabay.com/download/audio/2021/10/23/audio_f36fb0b9f9.mp3?filename=acoustic-warm-1371.mp3';
+        let audio = document.getElementById('invite-audio');
+        if (!audio) {
+          audio = document.createElement('audio');
+          audio.id = 'invite-audio';
+          audio.src = AUDIO_SRC;
+          audio.loop = true;
+          audio.preload = 'auto';
+          audio.crossOrigin = 'anonymous';
+          // don't show native controls; we use our custom button
+          audio.style.display = 'none';
+          document.body.appendChild(audio);
+        }
+
+        const btn = document.getElementById('music-control');
+        const icon = document.getElementById('music-icon');
+
+        // Load persisted preference
+        const stored = localStorage.getItem('inviteMusic') || 'paused'; // 'playing' or 'paused'
+        function setBtnState(playing) {
+          btn.setAttribute('aria-pressed', String(playing));
+          if (icon) {
+            icon.className = playing ? 'fas fa-pause' : 'fas fa-music';
+          }
+          btn.title = playing ? 'Pause music' : 'Play music';
+        }
+
+        // Try to resume playback if the user previously chose play — but playback may require gesture.
+        if (stored === 'playing') {
+          // attempt play; browsers may refuse until user interacts
+          audio.play().then(() => {
+            setBtnState(true);
+          }).catch(() => {
+            setBtnState(false);
+          });
+        } else {
+          setBtnState(false);
+        }
+
+        // Toggle on click (accessible and keyboard focusable)
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isPlaying = !btn.getAttribute('aria-pressed') || btn.getAttribute('aria-pressed') === 'false' ? false : true;
+          if (isPlaying) {
+            audio.pause();
+            localStorage.setItem('inviteMusic', 'paused');
+            setBtnState(false);
+          } else {
+            audio.play().then(() => {
+              localStorage.setItem('inviteMusic', 'playing');
+              setBtnState(true);
+            }).catch(() => {
+              // if play fails, keep button as 'not playing' and focus user
+              setBtnState(false);
+            });
+          }
+        });
+
+        // Stop audio on page unload to avoid lingering playback in some contexts
+        window.addEventListener('beforeunload', () => {
+          try { audio.pause(); } catch (e) {}
+        });
+
+        // Keyboard support: space / enter toggles button when focused
+        btn.addEventListener('keydown', (ev) => {
+          if (ev.key === ' ' || ev.key === 'Enter') {
+            ev.preventDefault();
+            btn.click();
+          }
+        });
       })();
-    </script>
-    </body>
-  </html>
+
+      // Active menu highlighting on scroll (throttle for performance)
+      let scrollTimeout = null;
+      window.addEventListener('scroll', function() {
+        if (scrollTimeout) return;
+        scrollTimeout = setTimeout(() => {
+          const sections = document.querySelectorAll('section[id]');
+          const menuLinks = document.querySelectorAll('.hero-menu-desktop a, .navbar-item[href^="#"]');
+          let current = '';
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+              current = section.getAttribute('id');
+            }
+          });
+          menuLinks.forEach(link => {
+            const parent = link.parentElement;
+            if (parent) {
+              parent.classList.remove('is-active');
+              if (link.getAttribute('href') === '#' + current) {
+                parent.classList.add('is-active');
+              }
+            }
+          });
+          scrollTimeout = null;
+        }, 100);
+      });
+
+      // Ensure external links open safely
+      $$('a[target="_blank"]').forEach(a => {
+        const rel = a.getAttribute('rel') || '';
+        if (!/noopener/i.test(rel)) rel && (a.rel = rel + ' noopener noreferrer') || (a.rel = 'noopener noreferrer');
+      });
+
+      // Floating hearts only on larger screens; keep efficient
+      if (window.innerWidth > 768) {
+        setInterval(() => {
+          // createHeart is defined later in page's script; guard call
+          if (typeof createHeart === 'function') createHeart();
+        }, 3000);
+      }
+    })();
+</script>
+</body>
+</html>
